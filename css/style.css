@@ -1,0 +1,82 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #333;
+    color: rgb(231, 231, 231);
+}
+
+#lr-slider {
+    width: 90%;
+}
+
+#configs {
+    float: right;
+    position: relative;
+    min-height: 150px;
+    padding: 10px;
+    width: 22%;
+    display: grid;
+}
+
+#canvas-content {
+    text-align: center;
+    float: left;
+    width: 60%;
+}
+
+#side-bottom {
+    bottom: 0;
+    left: 0;
+    bottom: 100px;
+    top: 10%;
+}
+
+canvas {
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+button {
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #999;
+    font-family: Arial;
+    color: #ffffff;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+  
+button:hover {
+    background: #0000001e;
+}
+
+#sc-btn{
+    margin-top: 10px;
+    width: 83%;
+}
+
+hr {
+    border-color: rgb(80, 80, 80);
+    border-width: .5px;
+}
+
+
+@media only screen and (max-width: 950px) {
+    #configs{
+        display: unset;
+        width: 50vw;
+        float: none;
+    }
+
+    #canvas-content{
+        width: 100%;
+    }
+
+    body{
+        text-align: center;
+    }
+}

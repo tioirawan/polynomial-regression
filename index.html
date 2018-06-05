@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" id="main-style" href="css/style.css">
+    <title>Polynomial Regression</title>
+</head>
+
+<body>
+    <div id="canvas-content"></div>
+
+    <div id="configs">
+        <button id="randomize-btn">Randomize!</button>
+        <button id="reset-btn">Reset!</button>
+        <button id="pause-btn">Pause!</button>
+        <br />
+        <select id="input-mode">
+            <option value="1">Click Mode</option>
+            <option value="2">Draw Mode</option>            
+        </select>
+        <br />
+        <table>
+            <tr>
+                <td>Regression Line</td>
+                <td>
+                    <input type="checkbox" id="show-line" checked title="Regression Line!">
+                </td>
+            </tr>
+            <tr>
+                <td>Line Graph</td>
+                <td>
+                    <input type="checkbox" id="show-line-graph" checked title="Line Graph!">
+                </td>
+            </tr>
+            <tr>
+                <td>Loss</td>
+                <td>
+                    <input type="checkbox" id="show-loss" title="Loss!">
+                </td>
+            </tr>
+            <tr>
+                <td>Graph</td>
+                <td>
+                    <input type="checkbox" id="show-graph" checked title="Graph!">
+                </td>
+            </tr>
+            <tr>
+                <td>Grid</td>
+                <td>
+                    <input type="checkbox" id="show-grid" checked title="Grid!">
+                </td>
+            </tr>
+            <tr>
+                <td>Degree</td>
+                <td>
+                    <select id="degree-mode">
+                        <option value="1">Linear</option>
+                        <option value="2">Quadratic</option>
+                        <option value="3">Cubic</option>
+                        <option value="4">Quartic</option>
+                        <option value="5">Quintic</option>
+                        <option value="6">Sextic</option>
+                        <option value="7">Septic</option>
+                        <option value="8">Octic</option>
+                        <option value="9">Nonic</option>
+                        <option value="10">Decic</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <div id="side-bottom">
+            <table>
+                <tr>
+                    <td>Learning Rate</td>
+                    <td id="info-lr"></td>
+                </tr>
+                <tr>
+                    <td>Loss</td>
+                    <td id="info-loss"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/0.11.4/tf.min.js"> </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
+
+    <script src="js/equation.js"></script>    
+    <script src="js/utils.js"></script>
+    <script src="js/sketch.js"></script>
+</body>
+
+</html>
